@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>userinfo</title>
 </head>
 <body>
     <h1>This is userinfo form!</h1>
@@ -14,21 +14,34 @@
                 username:
                 <input type="text" name="username" id="">
             </label>
-            <br/>
             <label for="email">
                 email:
                 <input type="text" name="email" id="">
             </label>
-            <br/>
             <label for="tel">
                 tel:
                 <input type="text" name="tel" id="">
             </label>
-            <br/>
             <p>
                 <input type="submit" value="Submit">
             </p>
         </form>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>用户名</th>
+                <th>邮箱</th>
+                <th>电话号码</th>
+            </tr>
+            {% for i in USER_LIST %}
+                <tr>
+                    <td>{{i.username}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.tel}}</td>
+                </tr>
+            {% endfor %}
+        </table>
     </div>
 </body>
 </html>

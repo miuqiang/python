@@ -5,6 +5,15 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse('<h1>h1</h1>')
 
+USER_LIST = []
 def userInfo(request):
-    return render(request,'userInfo.html')
+    if request.method=='POST':
+        username=request.POST.get('username',None)
+        email=request.POST.get('email',None)
+        tel=request.POST.get('tel',None)
+
+        if username and email and tel:
+            USER_LIST.append({'username':username,'email':email,'tel':tel})
+            
+    return render(request,'userInfo.html',{'USER_LIST':USER_LIST})
 
