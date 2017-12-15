@@ -8,7 +8,7 @@ def index(request):
     return HttpResponse('<h1>h1</h1>')
 
 def userInfo(request):
-    if request.method=='POST':
+    if request.method == 'POST':
         u=request.POST.get('username',None)
         e=request.POST.get('email',None)
         t=request.POST.get('tel',None)
