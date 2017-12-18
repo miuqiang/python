@@ -6,46 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>userinfo</title>
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/comon.css">
 </head>
 <body>
-    <h1>This is userinfo form!</h1>
-    <div>
-        <img src="/static/images/logo.jpg" alt="">
-    </div>
-    <div>
-        <form action="/polls/userinfo/" method="post">
-            <label for="username">
-                username:
-                <input type="text" name="username" id="">
-            </label>
-            <label for="email">
-                email:
-                <input type="text" name="email" id="">
-            </label>
-            <label for="tel">
-                tel:
-                <input type="text" name="tel" id="">
-            </label>
-            <p>
-                <input type="submit" value="Submit">
-            </p>
-        </form>
-    </div>
-    <div>
-        <table>
-            <tr>
-                <th>用户名</th>
-                <th>邮箱</th>
-                <th>电话号码</th>
-            </tr>
-            {% for i in USER_LIST %}
+    <div class="content">
+        <h1>This is userinfo form!</h1>
+        <div>
+            <img src="/static/images/logo.jpg" alt="">
+        </div>
+        <div>
+            <form action="/polls/userinfo/" method="post">
+                <label for="username">
+                    username:
+                    <input type="text" name="username" id="">
+                </label>
+                <label for="email">
+                    email:
+                    <input type="text" name="email" id="">
+                </label>
+                <label for="tel">
+                    tel:
+                    <input type="text" name="tel" id="">
+                </label>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+        <div>
+            <table>
                 <tr>
-                    <td>{{i.username}}</td>
-                    <td>{{i.email}}</td>
-                    <td>{{i.tel}}</td>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>电话号码</th>
                 </tr>
-            {% endfor %}
-        </table>
+                {% for i in USER_LIST %}
+                    <tr>
+                        <td>{{i.username}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.tel}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
     </div>
 </body>
 </html>
