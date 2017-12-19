@@ -6,5 +6,3 @@ class userInfo(models.Model):
     username=models.CharField(max_length=50)
     email=models.CharField(max_length=50)
     tel=models.CharField(max_length=50)
-    def __str__(self):
-        return self.userinfo_text
