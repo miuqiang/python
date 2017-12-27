@@ -1,4 +1,9 @@
 /* idnex */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .bs-docs-footer{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -12,4 +17,14 @@
 }
 .banner{
     margin-top: 50px;
+}
+#main{
+    padding-top: 15px
+}
+/* 合作伙伴 */
+.partner .item img{
+    width: 100%;
+}
+.partner .item h4{
+    text-align: center;
 }
