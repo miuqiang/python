@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/index.css">
+    {% block css %}{% endblock %}
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -53,10 +54,11 @@
     </section>
     <footer class="bs-docs-footer">
         <div class="container">
-            <p>© 2017</p>
+            <p>© 2018 &nbsp; <a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备18001078号</a></p>
         </div>
     </footer>
     <script src="/static/js/jquery.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    {% block js %}{% endblock %}
 </body>
 </html>

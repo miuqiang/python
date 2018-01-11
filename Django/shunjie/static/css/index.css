@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    font-family: 'microsoft yahei','Proxima', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+}
 .bs-docs-footer{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -21,10 +29,16 @@
 #main{
     padding-top: 15px
 }
-/* 合作伙伴 */
-.partner .item img{
-    width: 100%;
+/* footer */
+footer a{
+    color: #99979c;
 }
-.partner .item h4{
-    text-align: center;
+footer a:hover{
+    color: #cf000e;
+}
+.title{
+    font-size: 32px;
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
 }

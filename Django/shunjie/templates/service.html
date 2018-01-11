@@ -1,5 +1,46 @@
 {% extends 'master.html' %}
 {% block title %}服务理念{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/service.css">
+{% endblock %}
 {% block content %}
-<h1>服务理念</h1>
+<h1 class="title">服务理念</h1>
+<div class="service row">
+    <div class="col-md-3 col-sm-6 col-xs-12 ">
+        <a href="javascript:;">
+            <img class="img-s" src="/static/images/guiju.jpg">
+        </a>
+        <div class="message-title">立规矩</div>
+        <div class="message-body">
+            由于多年无序竞争，环境服务行业，没有标准，没有规矩，我们立志用三到五年制定出规矩，制定好标准，让环卫服务有据可依。
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 ">
+        <a href="javascript:;">
+            <img class="img-s" src="/static/images/partner.jpg">
+        </a>
+        <div class="message-title">树诚信</div>
+        <div class="message-body">
+            中国企业平均寿命只有2.9年，是因为忽略了“商道酬诚”的古训。浮躁的物质追求，让很多企业在利益中迷失而我们将始终恪守诚信为本。
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 ">
+        <a href="javascript:;">
+            <img class="img-s" src="/static/images/partner.jpg">
+        </a>
+        <div class="message-title">洗人心</div>
+        <div class="message-body">
+            因为行业属性让社会的关注与尊重从不在此，更让从业者心存自卑，而今可以自豪的说：我们虽干着最脏最累的工作，却拥有一颗金子般善良的心。
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 ">
+        <a href="javascript:;">
+            <img class="img-s" src="/static/images/sunshaine.jpg">
+        </a>
+        <div class="message-title">铸辉煌</div>
+        <div class="message-body">
+            大众创业，万众创新。我们要让环卫服务这个被人漠视却关系百姓安居乐业的民生工程成为互联网时代的新名片。
+        </div>
+    </div>
+</div>
 {% endblock %}
